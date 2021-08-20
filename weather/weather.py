@@ -11,7 +11,7 @@ City.create()
 
 
 #api parameters
-API_KEY = '85c00ae97c1228ab59fb4aaeb941fe93'
+API_KEY = os.environ.get('API_KEY')
 CITY_ID = '3448433'
 lat=-49.0
 log=-22.0
