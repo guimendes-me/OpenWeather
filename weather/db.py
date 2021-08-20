@@ -5,11 +5,11 @@ from sqlalchemy_utils import  database_exists, create_database
 import logging
 
 db = 'mysql'
-host='127.0.0.1'
-port=3306
-database='weather'
-user='root'
-password='admxz.82'
+host=os.environ.get('MYSQL_HOST') 
+port=os.environ.get('MYSQL_PORT') 
+database=os.environ.get('MYSQL_DATABASE') 
+user=os.environ.get('MYSQL_USER') 
+password=os.environ.get('MYSQL_PASS')
 
 Base = declarative_base()
 
